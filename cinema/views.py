@@ -101,6 +101,6 @@ class CinemaHallDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CinemaHallSerializer
 
 
-class MovieViewSets(viewsets.ModelViewSet):
+class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer

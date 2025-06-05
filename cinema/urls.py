@@ -26,13 +26,13 @@ movie_detail = MovieViewSets.as_view(actions={
 urlpatterns = [
     path("genres/", GenreList.as_view(), name="genre-list"),
     path(
-        "genres/<int:pk>",
+        "genres/<int:pk>/",
         GenreDetail.as_view(),
         name="genre-detail"
     ),
     path("actors/", ActorList.as_view(), name="actor-list"),
     path(
-        "actors/<int:pk>",
+        "actors/<int:pk>/",
         ActorDetail.as_view(),
         name="actor-detail"
     ),
@@ -47,7 +47,7 @@ urlpatterns = [
     ),
     path("movies/", movie_list, name="movie-list"),
     path(
-        "movies/<int:pk>",
+        "movies/<int:pk>/",
         movie_detail,
         name="movie-detail"
     ),
