@@ -36,9 +36,10 @@ urlpatterns = [
         ActorDetail.as_view(),
         name="actor-detail"
     ),
-    path("cinema-halls/",
-         CinemaHallList.as_view(),
-         name="cinema-hall-list"
+    path(
+        "cinema-halls/",
+        CinemaHallList.as_view(),
+        name="cinema-hall-list"
     ),
     path(
         "cinema-halls/<int:pk>/",
